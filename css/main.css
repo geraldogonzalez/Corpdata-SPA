@@ -10,7 +10,7 @@
 -------------------------------------------------------------------------------*/
 
 #first-slider .slide1 {
-    background-image: url('../images/slides/1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/slides/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1001,4 +1001,26 @@ ul.list-default li {
 	color: #e84545;
 	font-size: 11px;
 	margin: 0 2px;
+}
+
+@media screen and (max-width: 1024px) {
+
+	#header .header-content .logo > img {
+		width: 300px;
+		top: -118px;
+		left: -50px;
+	}
+
+	#header.fixed .header-content .logo > img {
+		top: -107px;
+	}
+
+	#map-overlay {
+		display: none;
+	}
+
+	.services-content {
+		height: 250px;
+	}
+	
 }
