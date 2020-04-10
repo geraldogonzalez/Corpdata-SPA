@@ -462,7 +462,7 @@ ul li {
           transform: translate3d(0, 0, 0);
 }
 .carousel-fade .carousel-control {
-  z-index: 2;
+  z-index: 9999;
 }
 
 .carousel-control .fa-angle-right, .carousel-control .fa-angle-left {
@@ -568,6 +568,8 @@ padding-bottom: 30px;
 	overflow: hidden;
 	position: relative;
 	background: #000;
+    max-width: 330px;
+    max-height: 200px;
 }
 .work img {
 	width: 100%;
