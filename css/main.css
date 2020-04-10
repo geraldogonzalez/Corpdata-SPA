@@ -154,6 +154,8 @@ ul li {
 }
 #header.fixed {
 	background-color: #f7f7f7;
+    max-height: 82px;
+    overflow: hidden;
 }
 #header.fixed a {
 	color: #000;
@@ -162,6 +164,17 @@ ul li {
 	border-bottom: 0;
 	padding: 25px 0;
 }
+
+#header .header-content .logo > img {
+    position: relative;
+    top: -125px;
+}
+
+#header.fixed .header-content .logo > img {
+    position: relative;
+    top: -117px;
+}
+
 #header.fixed .nav-toggle {
 	top: 18px;
 	color: #000;
@@ -507,7 +520,9 @@ ul li {
 /* -----------------------------------------------------------------------------
 Common Styles
 ------------------------------------------------------------------------------- */
-.section-header{	text-align: center;	padding-bottom: 30px;
+.section-header{	
+text-align: center;	
+padding-bottom: 30px;
 }
 .section-header h2{
 	
@@ -532,6 +547,7 @@ Common Styles
 	background: #eaeaea;
 	border: 1px solid #fff;
 	border-top: 4px solid #0385dc;
+    height: 212px;
 }
 .services .icon {
 	color: #ffffff;
