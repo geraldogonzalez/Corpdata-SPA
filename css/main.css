@@ -154,12 +154,17 @@ ul li {
 }
 #header.fixed {
 	background-color: #f7f7f7;
-    max-height: 82px;
+    max-height: 99px;
     overflow: hidden;
 }
 #header.fixed a {
 	color: #000;
 }
+#header.fixed .header-content .navigation {
+    position: relative;
+    margin-top: 15px;
+}
+
 #header.fixed .header-content {
 	border-bottom: 0;
 	padding: 25px 0;
@@ -167,12 +172,12 @@ ul li {
 
 #header .header-content .logo > img {
     position: relative;
-    top: -125px;
+    top: -175px;
 }
 
 #header.fixed .header-content .logo > img {
     position: relative;
-    top: -117px;
+    top: -157px;
 }
 
 #header.fixed .nav-toggle {
