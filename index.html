@@ -6,8 +6,15 @@
 <html class="no-js" lang="es">
 <!--<![endif]-->
 
-<head><meta charset="UTF-8"/>
-
+<head>
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta charset="UTF-8"/>
 <meta name="description" content="">
 <meta name="author" content="webthemez">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +22,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/flexslider.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.min.css">
 <link rel="stylesheet" href="css/font-icon.min.css">
 <link rel="stylesheet" href="css/animate.min.css">
@@ -187,8 +194,7 @@
                 <h2 class="wow fadeInDown animated">Portfolio</h2>
                 <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
-    <div class="row no-gutter">
-    </a> </div>
+            <div class="portfolio-container">
   <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/01.jpg" class="work-box"> <img src="images/portfolio/01.jpg" alt="">
     <div class="overlay">
       <div class="overlay-caption">
@@ -253,6 +259,7 @@
         </div>
         <!-- overlay --> 
         </a> </div>
+      </div>
     </div>
   </div>
 </section>
@@ -319,8 +326,9 @@ semper aliquam quis mattis consectetur adipiscing elit.." </h1>
       <div class="col-md-8 col-md-offset-2 conForm">       
         <div id="message"></div>
         <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tu nombre" >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Tu correo" >
+          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Nombre" >
+          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="tu.correo@correo" >
+          <input name="tel" id="tel" type="tel" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Teléfono" >
           <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Mensaje..."></textarea>
           <input type="submit" id="submit" name="send" class="submitBnt" value="Enviar">
           <div id="simple-msg"></div>
@@ -334,13 +342,12 @@ semper aliquam quis mattis consectetur adipiscing elit.." </h1>
 <footer class="footer">
 <div class="container-fluid">
 <div id="map-row" class="row">
-    <div class="col-xs-12">    
+    <div class="col-xs-12" style="position: relative;">    
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.699276850502!2d-70.68695531486439!3d-33.43108374268777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c440b1c478c3%3A0x3ce821a93f87c523!2sJuan%20de%20Barros%203885%2C%20Quinta%20Normal%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses!2sve!4v1586619634416!5m2!1ses!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       
           <div id="map-overlay" class="col-xs-5 col-xs-offset-6">
-    		<h2 style="margin-top:0;color:#fff;">Contacto</h2>
-    		<address style="color:#fff;">
-    			<strong>Corpdata SPA</strong><br>
+    		<h2 class="contact-title">Corpdata SPA</h2>
+    		<address class="direccion">
     			Juan de Barros 3885 Quinta Normal, Santiago, Chile.<br>
     			Tel: +56 9 64891076<br>
     			info@corpdata.cl<br>

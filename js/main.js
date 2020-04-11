@@ -90,6 +90,20 @@ $(document).ready(function() {
     $('#carousel-example-generic').carousel({
         interval:3000,
         pause: "false"
-    });
+	});
+	
+	$('#tel').keypress(function(tecla)
+
+   {
+
+      if(tecla.charCode < 48 || tecla.charCode > 57)
+
+      {
+
+         return false;
+
+      }
+
+   });
 	
 });
