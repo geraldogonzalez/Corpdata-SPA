@@ -160,10 +160,6 @@ ul li {
 #header.fixed a {
 	color: #000;
 }
-#header.fixed .header-content .navigation {
-    position: relative;
-    margin-top: 15px;
-}
 
 #header.fixed .header-content {
 	border-bottom: 0;
