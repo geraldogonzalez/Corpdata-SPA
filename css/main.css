@@ -89,6 +89,7 @@ h5 {
     border-radius: 3px;
     box-shadow: 0px 6px 12px;
     margin-left: 10px;
+    text-align: center;
 }
 
 #map-overlay h2 {
@@ -179,12 +180,12 @@ ul li {
 
 #header .header-content .logo > img {
     position: relative;
-    top: -175px;
+    top: -165px;
 }
 
 #header.fixed .header-content .logo > img {
     position: relative;
-    top: -157px;
+    top: -133px;
 }
 
 #header.fixed .nav-toggle {
@@ -201,7 +202,15 @@ ul li {
 }
 .navigation {
 	float: right;
+    position: relative;
+    margin-top: -5px;
 }
+
+#header.fixed .header-content .navigation {
+    position: relative;
+    margin-top: 15px;
+}
+
 .navigation li {
 	display: inline-block;
 }
