@@ -1,7 +1,11 @@
 /* ------------------------------------------------------------------------------
  	Author: WebThemez
 -------------------------------------------------------------------------------*/
-		
+
+html {
+	scroll-behavior: smooth;
+}
+
 @import url('http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700');
 	
 	
@@ -578,6 +582,19 @@ padding-bottom: 30px;
 	padding: 20px;
 	width: 90px;
 }
+
+.brand-image {
+	max-width: 200px; 
+	margin: 0 auto; 
+	position: relative; 
+	margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#testimonials > .container-fluid > h3 {
+	color: white;
+}
+
 /* ------------------------------------------------------------------------------
 	 gallery
 -------------------------------------------------------------------------------*/
@@ -727,6 +744,8 @@ About
 
 
 
+
+
 /*	CONTENT BLOCK 3-10 MEDIA QUERIES
 /*----------------------------------------------------*/
 
@@ -746,9 +765,11 @@ About
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (max-width : 1024px) {
 	
-	
+	.flexslider .flex-control-nav {
+		bottom: -15px;
+	}
 	
 }
 
@@ -902,8 +923,7 @@ ul.list-default li {
 	text-transform: uppercase;
 }
 .flex-control-nav {
-	margin-top: 2%;
-	bottom: none!important;
+	bottom: 10px;
 	position: relative!important;
 	right: 0;
 	text-align: center;
